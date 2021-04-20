@@ -21,7 +21,10 @@ Route::get('/', [HomeController::class, 'index']);
 
 // route pour la page Recette
 Route::get('/recettes', [RecettesController::class, 'index']);
+// afficher les détails d'une recette
+Route::get('/recettes/{id}', [RecettesController::class, 'show']);
 
 
 // route pour la page Contact
 Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/addContact', [ContactController::class, 'addContact'])->name('contact.send');
