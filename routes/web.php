@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RecettesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 // route pour la page home
 Route::get('/', [HomeController::class, 'index']);
+
+// route pour la page Recette
+Route::get('/recettes', [RecettesController::class, 'index']);
+
+
+// route pour la page Contact
+Route::get('/contact', [ContactController::class, 'index']);

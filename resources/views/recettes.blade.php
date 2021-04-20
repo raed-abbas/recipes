@@ -1,4 +1,4 @@
 @extends('layouts/main')
 @section('content')
-<h1>Home page</h1>
+<h2>Toutes les Recettes</h1>
 @endsection
