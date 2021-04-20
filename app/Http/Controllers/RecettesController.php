@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Recipe;
 
+
 class RecettesController extends Controller
 {
     // La méthode index
