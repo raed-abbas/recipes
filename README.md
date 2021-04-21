@@ -78,4 +78,43 @@ php artisan make:model Recipe
 ```
 php artisan make:factory RecipeFactory --model=Recipe 
 ```
+## Installation du projet
+- Récupérer le depôt git
+```
+git clone https://github.com/raed-abbas/recipes.git
+```
+- Une fois le depôt sur la machine
+```
+cd recipe-master
+```
+- Installer les dependence composer
+```
+composer install
+```
+- Installer les dependence npm
+```
+npm install
+```
+- Créer une copie du fichier .env 
+```
+cp .env.example .env
+```
+- Générer la clé d'encrption
+```
+php artisan key:generate
+```
+- Créer une base de données vide 
+- Ajouter la base de données dans le fichier .env pour permettre à laravel de se connecter à la base de données
+- Migrer la base de données
+```
+php artisan migrate
+```
+- Remplir la base de données
+```
+php artisan db:seed
+```
 
+- Lancer le projet 
+```
+php artisan serve
+```
