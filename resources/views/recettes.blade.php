@@ -1,6 +1,10 @@
 @extends('layouts/main')
 @section('content')
-<h2>Toutes les Recettes</h2>
+<div style="text-align: center;">
+    <h2>Toutes les Recettes</h2>
+    <a href="/admin/recettes/create" style="font-weight: bold; font-size: large;"> Ajouter une recette </a>
+</div>
+<hr style="border: 1px solide lightblue; width:100%">
 <table style="border: 1px solid ligthblue;">
     <tr>
         <th>Id</th>
@@ -14,7 +18,7 @@
         <td>{{$recette['id']}}</td>
         <td>{{$recette['author_id']}}</td>
         <td>{{$recette['title']}}</td>
-        <td> 
+        <td>
             <a href="/admin/recettes/{{$recette->id }}/edit" title="Mette à jour la recette"> {{$recette['url']}} </a>
         </td>
         <td>{{$recette['date']}}</td>

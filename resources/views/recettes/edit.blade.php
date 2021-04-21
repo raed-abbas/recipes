@@ -54,6 +54,15 @@
             </div>
         </div>
         <button class="button" >Enregistrer</button>
+
+        <form method="POST" action="/admin/recettes/{{ $recette->id }}">
+            @csrf
+
+            @method('DELETE')
+            <button  class="alert button" style="margin-left: 20px;">Supprimer la recette</button>
+        </form>
+
+        <a href="/admin/recettes" style="font-weight: bold; color:lightcoral; margin-left:20px;">Annuler</a>
     </div>
 </form>
 @endsection

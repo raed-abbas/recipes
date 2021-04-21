@@ -29,7 +29,7 @@ Route::post('/admin/recettes', [RecettesController::class, 'store']);
 Route::get('/admin/recettes/{id}/edit', [RecettesController::class, 'edit']);
 Route::put('/admin/recettes/{recette}', [RecettesController::class, 'update']);
 // ******
-Route::delete('/admin/recettes/{id}/delete', [RecettesController::class, 'destroy']);
+Route::delete('/admin/recettes/{id}', [RecettesController::class, 'destroy']);
 // ******
 // afficher les détails d'une recette
 Route::get('/recettes/{id}', [RecettesController::class, 'show']);

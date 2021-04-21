@@ -92,9 +92,12 @@ class RecettesController extends Controller
     // ******************************************************
 
     // supprimer une recette dans la base de données
-    function destroy()
+    function destroy($id)
     {
-        return ('All recettes');
+        $recette = Recipe::find($id);
+        $recette->delete();
+        
+        return redirect('/admin/recettes');
     }
     // ******************************************************
 
