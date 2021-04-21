@@ -35,7 +35,7 @@ class RecettesController extends Controller
         return view('recettes.create');
     }
     // Ajouter une recette dans la base de données
-    function sotre()
+    function store()
     {
         // ajouter de validation pour les champs de la recette
         request()->validate([
@@ -48,7 +48,7 @@ class RecettesController extends Controller
          ]);
         // créer la recette
         Recipe::create([
-            'author_id'=> 2,
+            'author_id'=> 3,
             'title' => request('title'),
             'content' => request('content'),
             'ingredients' => request('ingredients'),

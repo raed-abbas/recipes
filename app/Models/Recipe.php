@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Recipe extends Model
 {
     use HasFactory;
-    protected $fillable = [ 'title', 'content', 'ingredients', 'url', 'tags', 'date', 'status'];
+    protected $fillable = ['author_id', 'title', 'content', 'ingredients', 'url', 'tags', 'date', 'status'];
     /**
      * obtenir l'utilisateur qui a ecrit la recipe
      */
